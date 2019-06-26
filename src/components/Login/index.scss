@@ -1,0 +1,26 @@
+@import '../../mixin';
+
+.login-form-button{
+  width: 100%!important;
+  background-color: $nav-active-background;
+  color: #fff;
+  margin-top: 20px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  outline-style: none;
+  &:hover{
+    background-color: rgba($nav-active-background, 0.8);
+  }
+}
+
+.login-content{
+  padding: 0 50px;
+
+}
+.sigin{
+  >span{
+    color:$nav-active-background ;
+    cursor: pointer;
+  }
+}

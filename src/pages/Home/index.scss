@@ -1,0 +1,42 @@
+@import '../../mixin';
+
+
+.Home{
+  .zyd-card-content-item{
+    height: 25px;
+    cursor: pointer;
+    overflow: hidden;
+    &:hover{
+      color: $theme;
+    }
+    >.text{
+      width: calc(100% - 200px);
+      height: 35px;
+      float: left;
+      line-height: 35px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-break: keep-all;
+    }
+    >.time{
+      float: right;
+      height: 25px;
+      line-height: 25px;
+    }
+  }
+  .button-reset{
+    background:  $theme;
+    color: $nav-color
+  }
+  .button-search{
+    background: $nav-active-background;
+    color: $nav-color
+  }
+  .CardItem{
+      overflow: hidden;
+    &:hover{
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.zyd-footer{
+  padding: 0 180px;
+  height: 140px;
+  background-color: rgb(51, 51, 51);
+  .zyd-footer-top{
+    height: 33px;
+    border-bottom: 1px solid #4c4c4c;
+    margin-top: 25px;
+    display: inline-block;
+    width: 100%;
+    >a{
+      color: rgb(136, 136, 136);
+      font-size: 14px;
+    }
+    >.title{
+
+    }
+    >.item{
+      margin-left: 20px;
+    }
+    .right{
+      float: right;
+    }
+    .img{
+      display: inline-block;
+      background: rgb(153, 153, 153);
+      margin: 0 5px;
+      height: 25px;
+      text-align: center;
+      border-radius: 5px;
+    }
+    .wx,
+    .xl{
+      width: 27px;
+      img{
+        margin-top: 3px;
+      }
+    }
+    .yx{
+      width: 70px;
+      img{
+        margin-top: 3px;
+      }
+    }
+  }
+  .zyd-footer-bottom{
+    color: rgb(136, 136, 136);
+    font-size: 14px;
+    margin-top: 10px;
+    >p{margin-bottom: 3px}
+  }
+
+}

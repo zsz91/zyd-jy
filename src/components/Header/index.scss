@@ -1,0 +1,209 @@
+@import '../../mixin.scss';
+
+$lrWidth:180px;
+.zyd-header{
+  height: 148px;
+  background: #fff;
+  .zyd-header-title{
+    height: 100px;
+    position: relative;
+
+    .right-img,
+    .left-img{
+      position: absolute;
+      top: 50%;
+      margin-top: -24px;
+
+    }
+    .left-img{
+      left: $lrWidth;
+      height:53px;
+      width: 269px;
+      margin-top: -30px;
+    }
+    .right-img{
+      right: $lrWidth;
+      height: 48px;
+      width: 369px;
+    }
+  }
+  .zyd-NavBar{
+    height: 48px;
+  }
+  .zyd-NavBar{
+    height: 48px;
+    background-color: $nav-background;
+    position: relative;
+    .zyd-search{
+      width: 73px;
+      background:$search-background;
+      height: 30px;
+      border-radius: 60px;
+      overflow: hidden;
+      position: absolute;
+      right: 275px;
+      top: 9px;
+      border: 1px solid transparent;
+      transition: all .4s ease;
+      &:hover{
+        border-color:$theme;
+      }
+      &.active{
+        width: 220px;
+      }
+      >input{
+        width: calc(100% - 40px);
+        margin-left: 5px;
+        border: none;
+        outline-style: none;
+        height: 30px;
+        padding: 0 5px;
+        vertical-align: middle;
+        background: transparent;
+        color:$search-color;
+        line-height: 30px;
+      }
+      >i{
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        line-height: 35px;
+        text-align: center;
+        color: $search-color;
+        vertical-align: middle;
+        cursor: pointer;
+        font-size: 18px;
+      }
+    }
+    .zyd-nav{
+      display: none;
+      width: calc(100% - 560px);
+      margin-left: 180px;
+      background-color: transparent;
+      color:$nav-color;
+      &.active{
+        display: flex;
+      }
+      .zyd-item{
+        flex: 1;
+        line-height: 48px;
+        text-align: center;
+        cursor: pointer;
+        list-style: none;
+        background-color: transparent;
+        transition: all .2s ease;
+        height: 48px;
+        position: relative;
+        &:hover{
+          background-color: $nav-hover-background;
+        }
+        &.active{
+          background-color: $nav-active-background;
+          color:$nav-active-color;
+          box-shadow: 0 0 2px 0 #ccc;
+        }
+      }
+    }
+    .zyd-logo{
+      position: absolute;
+      height: 48px;
+      min-width: 100px;
+      right: 230px;
+      top: 0;
+      cursor: pointer;
+      text-align: center;
+      .user,
+      .text{
+        display: inline-block;
+      }
+      .user{
+        background-size: cover!important;
+        position: relative;
+        height: 17px;
+        width: 15px;
+        top: 0;
+        right: 5px;
+        vertical-align: middle;
+      }
+      .user-name{
+        display: inline-block;
+        min-width: 30px;
+        overflow: hidden;
+        height: 48px;
+        line-height: 48px;
+        text-overflow: ellipsis;
+        word-break: keep-all;
+        vertical-align: middle;
+        text-align: center;
+        color: #fff;
+      }
+
+    }
+  }
+.zyd-logo{
+  line-height: 48px;
+  font-size: 15px;
+  margin-left:10px;
+  .home{
+    color:#fff;
+  }
+  .back-home{
+    color:#fff;
+    margin-left:5px
+  }
+}
+
+  .zyd-header-item-list{
+    >ul{
+      position: absolute;
+      z-index: 99;
+      background:$nav-background;
+      height:0;
+      color:$nav-color;
+      list-style: none;
+      left: 1px;
+      overflow: hidden;
+      transition: all .2s ease;
+      width: 100%;
+      top:48px;
+      >li{
+        padding: 0 5px;
+        height: 31px;
+        line-height: 31px;
+        &:hover{
+          background: $nav-hover-background;
+        }
+        &.active{
+          background: $nav-active-background;
+        }
+      }
+    }
+    &:hover{
+      >ul{
+        height: 61px;
+        &.active{
+          height: 31px;
+        }
+      }
+    }
+  }
+
+
+}
+
+@media screen and (max-width: 1200px) {
+  .zyd-nav{
+    width: calc(100% - 300px)!important;
+    margin-left: 20px!important;
+  }
+  .zyd-logo{
+    right:20px!important;
+  }
+  .zyd-logo.zyd-header-item-list{
+    right:100px!important;
+  }
+  .zyd-search{
+    right: 200px!important;
+  }
+}
+

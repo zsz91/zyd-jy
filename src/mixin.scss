@@ -1,0 +1,21 @@
+@mixin bg($value){
+  background: url("/images/" + $value);
+  background-size: cover;
+}
+
+@mixin border-bottom(){
+  border-bottom: 1px solid #EBEEF5;
+}
+
+$theme:rgba(43,69,181,1);//主题颜色
+$nav-background:$theme;//导航栏背景
+$nav-active-background:rgba(254,114,46,1);//导航栏子元素激活背景
+$nav-active-background-c:#e45814; //元素激活背景深一点
+$nav-color:#fff;//导航栏字体
+$nav-active-color:#fff;//导航栏子元素激活字体
+$nav-hover-background:#3c36367a;//导航栏子元素hover背景
+$search-background:#fff; //索搜背景
+$search-color:$theme;//索搜字体
+$border-color:#EBEEF5;//默认边框颜色
+$border-color-c:#cacaca;//深边框颜色
+

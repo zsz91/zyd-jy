@@ -1,0 +1,33 @@
+@import '../../mixin';
+.Register{
+  .reg-header{
+    line-height: 35px;
+    height: 35px;
+    border-bottom: 1px solid $border-color-c;
+  }
+  .reg-left{
+    color: $theme;
+    font-size: 16px;
+    float: left;
+    font-weight: bold;
+  }
+  .reg-right{
+    float: right;
+    .reg-login{
+      color: $theme;
+    }
+  }
+  .subscriber{
+    color: $theme;
+  }
+  .reg-button{
+    text-align: center;
+    .reg-btn{
+      background: $nav-active-background!important;
+      color: #fff;
+      &[disabled]{
+        background: #b9b9b9 !important
+      }
+    }
+  }
+}
